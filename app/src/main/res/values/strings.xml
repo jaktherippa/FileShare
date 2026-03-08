@@ -80,4 +80,7 @@
     <string name="about_app">About App</string>
     <string name="app_version">App Version</string>
 
+<!--    DEVELOPER(S)-->
+    <string name="jaktherippa">jaktherippa</string>
+
 </resources>
