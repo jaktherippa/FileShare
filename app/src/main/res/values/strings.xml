@@ -1,0 +1,83 @@
+<resources>
+    <!--    HOME PAGE  -->
+    <string name="app_name">FileShare</string>
+    <string name="transfer_method">Transfer Method</string>
+    <string name="send_files">SEND FILES</string>
+    <string name="receive_files">RECEIVE FILES</string>
+    <string name="hotspot">Hotspot(Faster)</string>
+    <string name="bluetooth">Bluetooth(Stable)</string>
+    <string name="home">HOME</string>
+    <string name="history">HISTORY</string>
+    <string name="settings">SETTINGS</string>
+
+    <!--    BLUETOOTH SETUP -->
+    <string name="bluetooth_setup">Bluetooth Setup</string>
+    <string name="bluetooth_status">Bluetooth Status</string>
+    <string name="device_visibility">Device Visibility</string>
+    <string name="searching_for_devices">Searching For Devices</string>
+    <string name="list_of_devices">List Of Devices</string>
+
+    <!--    HOTSPOT SETUP -->
+    <string name="hotspot_setup">Hotspot Setup</string>
+    <string name="create_local_network">Create Local Network</string>
+    <string name="network_name">Network Name</string>
+    <string name="password">Password</string>
+    <string name="start_hotspot">Start Hotspot</string>
+
+    <!--  DEVICE DISCOVERY  -->
+    <string name="device_discovery">Device Discovery</string>
+    <string name="select_device">Select Device</string>
+    <string name="refresh">Refresh</string>
+
+    <!--    ESTABLISHING CONNECTION-->
+    <string name="waiting_for_sender">Waiting For Sender</string>
+
+    <!--    FILE SELECTION-->
+    <string name="select_files">Select Files</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="docs">Docs</string>
+    <string name="all">All</string>
+    <string name="list_of_available_files">List Of Available Files</string>
+    <string name="selected_file_size">Selected File Size</string>
+    <string name="send">Send</string>
+
+    <!--    TRANSFER -->
+    <string name="sending_information">Sending To…</string>
+    <string name="file_name">File Name</string>
+    <string name="progress">Progress</string>
+    <string name="speed">Speed</string>
+    <string name="time_left">Time Left</string>
+    <string name="cancel">Cancel</string>
+
+    <!--    RECEIVER -->
+    <string name="incoming_connection">Incoming Connection</string>
+    <string name="sender_device_name">Sender Device Name</string>
+    <string name="status">Device Status(Discoverable)</string>
+    <string name="accept_connection">Accept</string>
+    <string name="decline_connection">Decline</string>
+
+    <!--    TRANSFER COMPLETE -->
+    <string name="files_received">Files Received</string>
+    <string name="storage_location">Storage Location</string>
+    <string name="transfer_status">Transfer Status</string>
+    <string name="open_folder">Open Folder</string>
+    <string name="done">Done</string>
+
+    <!--    TRANSFER HISTORY -->
+    <string name="transfer_history">Transfer History</string>
+    <string name="sent">Sent</string>
+    <string name="retry">Retry</string>
+    <string name="received">Received</string>
+    <string name="delete">Delete</string>
+    <string name="date">Date</string>
+
+    <!--    SETTINGS -->
+    <string name="device_name">Device Name</string>
+    <string name="save_location">Save Location</string>
+    <string name="auto_accept_trusted_devices">Auto Accept Trusted Devices</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="about_app">About App</string>
+    <string name="app_version">App Version</string>
+
+</resources>

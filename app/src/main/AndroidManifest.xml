@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FileShare">
+        <activity
+            android:name=".EstablishingConnectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReceiverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotspotSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FileSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeviceDiscoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConnectionSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>
