@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -80,7 +80,7 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/receive_files_butoon"
+                android:id="@+id/receive_files_button"
                 android:layout_width="70dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
