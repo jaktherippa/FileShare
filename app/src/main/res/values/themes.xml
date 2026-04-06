@@ -3,10 +3,10 @@
     <style name="Base.Theme.FileShare" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimary">@color/ripe_strawberry</item>
         <item name="colorOnPrimary">@color/black</item>
 
-        <item name="colorSecondary">@color/pink</item>
+        <item name="colorSecondary">@color/ripe_strawberry</item>
         <item name="colorOnSecondary">@color/black</item>
 
         <item name="android:statusBarColor">?attr/colorPrimary</item>
