@@ -25,13 +25,10 @@ public class MainActivity extends AppCompatActivity{
         });
 
         //    Declare UI components
-        Button send_files,receive_files,home,history, settings;
+        Button send_files,receive_files;
         //Match Declared components with  component id
         send_files = findViewById(R.id.send_files_button);
         receive_files = findViewById(R.id.receive_files_button);
-        home = findViewById(R.id.home_button);
-        history = findViewById(R.id.history_button);
-        settings = findViewById(R.id.settings_button);
 
         send_files.setOnClickListener(new View.OnClickListener() {
             @Override
