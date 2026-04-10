@@ -1,12 +1,18 @@
 package com.example.fileshare;
 
-import static androidx.core.app.ActivityCompat.startActivityForResult;
-
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
-import android.widget.Button;
-
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 public class BluetoothManager{
+    private ActivityResultLauncher<Intent> enableBluetoothLauncher = new ActivityResultContracts.StartActivityForResult(), result -> {
+        if(result.getResultCode() == Activity.RESULT_OK){
+            //Bluetooth was turned on successfully
+        }else{
+            //Bluetooth Not Supported
+        }
+    }
     public BluetoothManager(ConnectionSetupActivity activity){
         BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if(mBluetoothAdapter == null){
@@ -14,7 +20,7 @@ public class BluetoothManager{
         }
         if (mBluetoothAdapter != null && !mBluetoothAdapter.isEnabled()) {
             Intent bluetooth = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(activity,bluetooth,0, " ");
+
         }
     }
 }
