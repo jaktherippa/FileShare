@@ -77,7 +77,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/accept_connection" />
+                android:text="@string/accept_connection"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView115"
@@ -90,7 +91,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/decline_connection" />
+                android:text="@string/decline_connection"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView116"

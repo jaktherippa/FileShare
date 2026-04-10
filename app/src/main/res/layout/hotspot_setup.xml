@@ -93,7 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/start_hotspot" />
+                android:text="@string/start_hotspot"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView105"

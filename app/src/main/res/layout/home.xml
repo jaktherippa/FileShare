@@ -55,7 +55,8 @@
                 android:layout_width="70dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:text="@string/send_files" />
+                android:text="@string/send_files"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView21"
@@ -85,7 +86,8 @@
                 android:layout_width="70dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:text="@string/receive_files" />
+                android:text="@string/receive_files"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView23"
@@ -115,7 +117,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/home" />
+                android:text="@string/home"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView58"
@@ -128,7 +131,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/history" />
+                android:text="@string/history"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView59"
@@ -141,7 +145,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/settings" />
+                android:text="@string/settings"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView60"

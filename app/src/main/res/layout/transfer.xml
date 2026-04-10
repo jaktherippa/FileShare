@@ -96,7 +96,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/cancel" />
+                android:text="@string/cancel"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
 
             <TextView
                 android:id="@+id/textView67"
