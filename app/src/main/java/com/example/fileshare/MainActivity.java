@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity{
         send_files.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Bluetooth Created", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Setup Connection", Toast.LENGTH_SHORT).show();
                 Intent connectionSetup = new Intent(MainActivity.this, ConnectionSetupActivity.class);
                 startActivity(connectionSetup);
                 finish();
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity{
         receive_files.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Hotspot Created", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Setup Connection", Toast.LENGTH_SHORT).show();
                 Intent connectionSetup = new Intent(MainActivity.this, ConnectionSetupActivity.class);
                 startActivity(connectionSetup);
                 finish();
