@@ -26,8 +26,20 @@
     <string name="network_name">Network Name</string>
     <string name="password">Password</string>
     <string name="start_hotspot">Start Hotspot</string>
-
-    <!--  DEVICE DISCOVERY  -->
+    <string name="hotspot_active">Hotspot Active</string>
+    <string name="share_with_nearby">Share with anyone nearby</string>
+    <string name="be_discovered">Be discovered and receive files</string>
+    <string name="select_files_action">Select Files</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="connecting">Connecting to </string>
+    <string name="transferring">Transferring files...</string>
+    <string name="transfer_done">Transfer complete</string>
+    <string name="or_divider">OR</string>
+    <string name="sending_to">Sending to %s</string>
+    <string name="unknown_device">Unknown Device</string>
+    <string name="current_file">Current File: %s</string>
+    <string name="android_device_default">Android Device</string>
     <string name="device_discovery">Device Discovery</string>
     <string name="select_device">Select Device</string>
     <string name="refresh">Refresh</string>

@@ -5,130 +5,85 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
     tools:context=".SettingsActivity">
 
-    <LinearLayout
-        android:layout_width="396dp"
-        android:layout_height="718dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/settings"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView76"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_title">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
+            <!-- Device Name -->
             <TextView
-                android:id="@+id/textView77"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="" />
-
+                android:text="@string/device_name"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="?attr/colorPrimary" />
             <TextView
-                android:id="@+id/textView78"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="@string/settings" />
+                android:id="@+id/device_name_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:text="Android Device"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
 
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" android:layout_marginVertical="16dp"/>
+
+            <!-- Dark Mode -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dark_mode"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/dark_mode_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" android:layout_marginVertical="16dp"/>
+
+            <!-- About -->
             <TextView
-                android:id="@+id/textView79"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="" />
+                android:text="@string/about_app"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/app_version"
+                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                android:alpha="0.6" />
+
         </LinearLayout>
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/textView80"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView81"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/device_name" />
-
-        <TextView
-            android:id="@+id/textView82"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView83"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/transfer_method" />
-
-        <TextView
-            android:id="@+id/textView84"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView85"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/save_location" />
-
-        <TextView
-            android:id="@+id/textView86"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView87"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/auto_accept_trusted_devices" />
-
-        <TextView
-            android:id="@+id/textView88"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView89"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/dark_mode" />
-
-        <TextView
-            android:id="@+id/textView90"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView91"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/about_app" />
-
-        <TextView
-            android:id="@+id/textView93"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:id="@+id/textView94"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/app_version" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

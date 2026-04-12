@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,30 +23,20 @@ public class MainActivity extends AppCompatActivity{
             return insets;
         });
 
-        //    Declare UI components
-        Button send_files,receive_files;
-        //Match Declared components with  component id
-        send_files = findViewById(R.id.send_files_button);
-        receive_files = findViewById(R.id.receive_files_button);
-
-        send_files.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Setup Connection", Toast.LENGTH_SHORT).show();
-                Intent connectionSetup = new Intent(MainActivity.this, ConnectionSetupActivity.class);
-                startActivity(connectionSetup);
-                finish();
-            }
+        findViewById(R.id.send_files_button).setOnClickListener(v -> {
+            startActivity(new Intent(this, FileSelectionActivity.class));
         });
 
-        receive_files.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Setup Connection", Toast.LENGTH_SHORT).show();
-                Intent connectionSetup = new Intent(MainActivity.this, ConnectionSetupActivity.class);
-                startActivity(connectionSetup);
-                finish();
-            }
+        findViewById(R.id.receive_files_button).setOnClickListener(v -> {
+            startActivity(new Intent(this, ConnectionSetupActivity.class));
+        });
+
+        findViewById(R.id.history_button).setOnClickListener(v -> {
+            startActivity(new Intent(this, TransferHistoryActivity.class));
+        });
+
+        findViewById(R.id.settings_button).setOnClickListener(v -> {
+            startActivity(new Intent(this, SettingsActivity.class));
         });
     }
 }

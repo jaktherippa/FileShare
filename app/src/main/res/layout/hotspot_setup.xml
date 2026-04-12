@@ -5,104 +5,107 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
     tools:context=".HotspotSetupActivity">
 
-    <LinearLayout
-        android:layout_width="347dp"
-        android:layout_height="758dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/hotspot_setup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/hotspot_setup"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView92"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/textView95"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/hotspot_setup" />
-
-        <TextView
-            android:id="@+id/textView96"
-            android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/textView97"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/create_local_network" />
-
-        <TextView
-            android:id="@+id/textView98"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/textView99"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/network_name" />
-
-        <TextView
-            android:id="@+id/textView100"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/textView101"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/password" />
-
-        <TextView
-            android:id="@+id/textView102"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hotspot_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="48dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotspot_setup_title"
+        app:strokeWidth="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="63dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <TextView
-                android:id="@+id/textView104"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/start_hotspot"
-                style="@style/Widget.Material3.Button.OutlinedButton"/>
+                android:text="@string/create_local_network"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:textColor="?attr/colorPrimary" />
 
             <TextView
-                android:id="@+id/textView105"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="" />
+                android:layout_marginTop="24dp"
+                android:text="@string/network_name"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/ssid_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/empty"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/password"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/password_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/empty"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textStyle="bold" />
+
         </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/hotspot_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/share_with_nearby"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotspot_card" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_hotspot_btn"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/start_hotspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotspot_description" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

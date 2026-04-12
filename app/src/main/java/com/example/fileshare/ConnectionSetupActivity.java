@@ -20,7 +20,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ConnectionSetupActivity extends AppCompatActivity {
-    private Button turnOn, turnOff;
+    private Button turnOn, turnOff, useHotspot;
     private BluetoothManager bluetoothManager;
     private final ActivityResultLauncher<Intent> bluetoothLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -61,11 +61,17 @@ public class ConnectionSetupActivity extends AppCompatActivity {
         bluetoothManager = new BluetoothManager(this);
         turnOn = findViewById(R.id.turn_bluetooth_on);
         turnOff = findViewById(R.id.turn_bluetooth_off);
+        useHotspot = findViewById(R.id.use_hotspot);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        useHotspot.setOnClickListener(v -> {
+            Intent intent = new Intent(ConnectionSetupActivity.this, HotspotSetupActivity.class);
+            startActivity(intent);
         });
 
         turnOn.setOnClickListener(new View.OnClickListener() {
